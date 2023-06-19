@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB0051A5279879F80072AB5F /* siren.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0051A4279879F80072AB5F /* siren.swift */; };
+		AB0051A727987A7F0072AB5F /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AB0051A627987A7F0072AB5F /* alarm.mp3 */; };
+		ABCD5D062791ED2100B99855 /* squarekioskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D052791ED2100B99855 /* squarekioskApp.swift */; };
+		ABCD5D082791ED2100B99855 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D072791ED2100B99855 /* ContentView.swift */; };
+		ABCD5D0A2791ED2200B99855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCD5D092791ED2200B99855 /* Assets.xcassets */; };
+		ABCD5D0D2791ED2200B99855 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABCD5D0C2791ED2200B99855 /* Preview Assets.xcassets */; };
+		ABCD5D162791F42500B99855 /* menuStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D152791F42500B99855 /* menuStore.swift */; };
+		ABCD5D182791F4A100B99855 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D172791F4A100B99855 /* Item.swift */; };
+		ABCD5D1C2791F56600B99855 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ABCD5D1B2791F56600B99855 /* Alamofire */; };
+		ABCD5D1F2791F9FD00B99855 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ABCD5D1E2791F9FD00B99855 /* FirebaseAuth */; };
+		ABCD5D212791F9FD00B99855 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = ABCD5D202791F9FD00B99855 /* FirebaseDatabase */; };
+		ABCD5D232791F9FD00B99855 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = ABCD5D222791F9FD00B99855 /* FirebaseFirestore */; };
+		ABCD5D252791F9FD00B99855 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = ABCD5D242791F9FD00B99855 /* FirebaseRemoteConfig */; };
+		ABCD5D272791F9FD00B99855 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = ABCD5D262791F9FD00B99855 /* FirebaseStorage */; };
+		ABCD5D292791FA2500B99855 /* RemoteConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D282791FA2400B99855 /* RemoteConfigManager.swift */; };
+		ABCD5D2D2791FAAA00B99855 /* AppDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D2C2791FAAA00B99855 /* AppDelegates.swift */; };
+		ABCD5D2F2791FB4100B99855 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D2E2791FB4100B99855 /* Category.swift */; };
+		ABCD5D312791FFCF00B99855 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABCD5D302791FFCF00B99855 /* GoogleService-Info.plist */; };
+		ABCD5D332792009200B99855 /* RemoteConfigDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABCD5D322792009200B99855 /* RemoteConfigDefaults.plist */; };
+		ABCD5D352792040B00B99855 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D342792040B00B99855 /* extensions.swift */; };
+		ABCD5D382792236600B99855 /* CategoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D372792236600B99855 /* CategoryListView.swift */; };
+		ABCD5D3A2792237400B99855 /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D392792237400B99855 /* ItemListView.swift */; };
+		ABCD5D3C2792238000B99855 /* VariationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D3B2792238000B99855 /* VariationListView.swift */; };
+		ABCD5D3E2792247B00B99855 /* functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D3D2792247B00B99855 /* functions.swift */; };
+		ABCD5D4027922E9800B99855 /* selectedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D3F27922E9800B99855 /* selectedStore.swift */; };
+		ABCD5D4227924CEC00B99855 /* AddToOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D4127924CEC00B99855 /* AddToOrderView.swift */; };
+		ABCD5D45279254BF00B99855 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = ABCD5D44279254BF00B99855 /* AlertToast */; };
+		ABCD5D4727925BF200B99855 /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D4627925BF200B99855 /* CustomStepper.swift */; };
+		ABCD5D49279269FD00B99855 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D48279269FD00B99855 /* Cart.swift */; };
+		ABCD5D4B27926E5100B99855 /* OrderNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D4A27926E5100B99855 /* OrderNowView.swift */; };
+		ABCD5D4D279274F700B99855 /* orderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D4C279274F700B99855 /* orderCard.swift */; };
+		ABCD5D4F2792781100B99855 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D4E2792781100B99855 /* Counter.swift */; };
+		ABCD5D5127929F2400B99855 /* PayNow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D5027929F2300B99855 /* PayNow.swift */; };
+		ABCD5D592795FF6B00B99855 /* AdminLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D582795FF6B00B99855 /* AdminLogin.swift */; };
+		ABCD5D5B2796047900B99855 /* AdminMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D5A2796047900B99855 /* AdminMain.swift */; };
+		ABCD5D5D279719CC00B99855 /* AnimatedCheckmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCD5D5C279719CC00B99855 /* AnimatedCheckmark.swift */; };
+		ABD9479127A1BD57008744D2 /* UserConfigDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9479027A1BD57008744D2 /* UserConfigDefaults.swift */; };
+		ABD9479327A1C106008744D2 /* AdminSetPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9479227A1C106008744D2 /* AdminSetPin.swift */; };
+		ABD9479527A1C61C008744D2 /* AdminSetDeviceID.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9479427A1C61C008744D2 /* AdminSetDeviceID.swift */; };
+		ABD9479727A1FA96008744D2 /* AdminSetKioskName.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9479627A1FA96008744D2 /* AdminSetKioskName.swift */; };
+		ABD9479927A1FC22008744D2 /* AdminSetLocationID.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9479827A1FC22008744D2 /* AdminSetLocationID.swift */; };
+		ABD9479B27A200B4008744D2 /* KioskConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9479A27A200B4008744D2 /* KioskConfig.swift */; };
+		ABD9479D27A2043F008744D2 /* AdminLoadConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD9479C27A2043F008744D2 /* AdminLoadConfig.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB0051A3279872D60072AB5F /* square.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = square.ttf; sourceTree = "<group>"; };
+		AB0051A4279879F80072AB5F /* siren.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = siren.swift; sourceTree = "<group>"; };
+		AB0051A627987A7F0072AB5F /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		ABCD5D022791ED2100B99855 /* squarekiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = squarekiosk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABCD5D052791ED2100B99855 /* squarekioskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = squarekioskApp.swift; sourceTree = "<group>"; };
+		ABCD5D072791ED2100B99855 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ABCD5D092791ED2200B99855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABCD5D0C2791ED2200B99855 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABCD5D132791ED5900B99855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ABCD5D152791F42500B99855 /* menuStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuStore.swift; sourceTree = "<group>"; };
+		ABCD5D172791F4A100B99855 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		ABCD5D282791FA2400B99855 /* RemoteConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteConfigManager.swift; sourceTree = "<group>"; };
+		ABCD5D2C2791FAAA00B99855 /* AppDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegates.swift; sourceTree = "<group>"; };
+		ABCD5D2E2791FB4100B99855 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		ABCD5D302791FFCF00B99855 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ABCD5D322792009200B99855 /* RemoteConfigDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RemoteConfigDefaults.plist; sourceTree = "<group>"; };
+		ABCD5D342792040B00B99855 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		ABCD5D372792236600B99855 /* CategoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListView.swift; sourceTree = "<group>"; };
+		ABCD5D392792237400B99855 /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		ABCD5D3B2792238000B99855 /* VariationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationListView.swift; sourceTree = "<group>"; };
+		ABCD5D3D2792247B00B99855 /* functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = functions.swift; sourceTree = "<group>"; };
+		ABCD5D3F27922E9800B99855 /* selectedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectedStore.swift; sourceTree = "<group>"; };
+		ABCD5D4127924CEC00B99855 /* AddToOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToOrderView.swift; sourceTree = "<group>"; };
+		ABCD5D4627925BF200B99855 /* CustomStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
+		ABCD5D48279269FD00B99855 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		ABCD5D4A27926E5100B99855 /* OrderNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderNowView.swift; sourceTree = "<group>"; };
+		ABCD5D4C279274F700B99855 /* orderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderCard.swift; sourceTree = "<group>"; };
+		ABCD5D4E2792781100B99855 /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		ABCD5D5027929F2300B99855 /* PayNow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayNow.swift; sourceTree = "<group>"; };
+		ABCD5D582795FF6B00B99855 /* AdminLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLogin.swift; sourceTree = "<group>"; };
+		ABCD5D5A2796047900B99855 /* AdminMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminMain.swift; sourceTree = "<group>"; };
+		ABCD5D5C279719CC00B99855 /* AnimatedCheckmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedCheckmark.swift; sourceTree = "<group>"; };
+		ABD9479027A1BD57008744D2 /* UserConfigDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfigDefaults.swift; sourceTree = "<group>"; };
+		ABD9479227A1C106008744D2 /* AdminSetPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSetPin.swift; sourceTree = "<group>"; };
+		ABD9479427A1C61C008744D2 /* AdminSetDeviceID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSetDeviceID.swift; sourceTree = "<group>"; };
+		ABD9479627A1FA96008744D2 /* AdminSetKioskName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSetKioskName.swift; sourceTree = "<group>"; };
+		ABD9479827A1FC22008744D2 /* AdminSetLocationID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminSetLocationID.swift; sourceTree = "<group>"; };
+		ABD9479A27A200B4008744D2 /* KioskConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KioskConfig.swift; sourceTree = "<group>"; };
+		ABD9479C27A2043F008744D2 /* AdminLoadConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoadConfig.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABCD5CFF2791ED2100B99855 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCD5D212791F9FD00B99855 /* FirebaseDatabase in Frameworks */,
+				ABCD5D45279254BF00B99855 /* AlertToast in Frameworks */,
+				ABCD5D232791F9FD00B99855 /* FirebaseFirestore in Frameworks */,
+				ABCD5D1C2791F56600B99855 /* Alamofire in Frameworks */,
+				ABCD5D1F2791F9FD00B99855 /* FirebaseAuth in Frameworks */,
+				ABCD5D252791F9FD00B99855 /* FirebaseRemoteConfig in Frameworks */,
+				ABCD5D272791F9FD00B99855 /* FirebaseStorage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABCD5CF92791ED2100B99855 = {
+			isa = PBXGroup;
+			children = (
+				ABCD5D042791ED2100B99855 /* squarekiosk */,
+				ABCD5D032791ED2100B99855 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABCD5D032791ED2100B99855 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABCD5D022791ED2100B99855 /* squarekiosk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABCD5D042791ED2100B99855 /* squarekiosk */ = {
+			isa = PBXGroup;
+			children = (
+				ABCD5D302791FFCF00B99855 /* GoogleService-Info.plist */,
+				AB0051A3279872D60072AB5F /* square.ttf */,
+				AB0051A627987A7F0072AB5F /* alarm.mp3 */,
+				ABCD5D192791F4A600B99855 /* Models */,
+				ABCD5D142791F40600B99855 /* Resources */,
+				ABCD5D362792234B00B99855 /* Views */,
+				ABCD5D572795FF5100B99855 /* Admin */,
+				ABCD5D132791ED5900B99855 /* Info.plist */,
+				ABCD5D4627925BF200B99855 /* CustomStepper.swift */,
+				ABCD5D052791ED2100B99855 /* squarekioskApp.swift */,
+				ABCD5D072791ED2100B99855 /* ContentView.swift */,
+				ABCD5D092791ED2200B99855 /* Assets.xcassets */,
+				ABCD5D0B2791ED2200B99855 /* Preview Content */,
+				ABCD5D2C2791FAAA00B99855 /* AppDelegates.swift */,
+				ABCD5D322792009200B99855 /* RemoteConfigDefaults.plist */,
+				ABCD5D4E2792781100B99855 /* Counter.swift */,
+				ABCD5D4C279274F700B99855 /* orderCard.swift */,
+				ABD9479027A1BD57008744D2 /* UserConfigDefaults.swift */,
+			);
+			path = squarekiosk;
+			sourceTree = "<group>";
+		};
+		ABCD5D0B2791ED2200B99855 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ABCD5D0C2791ED2200B99855 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ABCD5D142791F40600B99855 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABCD5D152791F42500B99855 /* menuStore.swift */,
+				ABCD5D282791FA2400B99855 /* RemoteConfigManager.swift */,
+				ABCD5D342792040B00B99855 /* extensions.swift */,
+				ABCD5D3D2792247B00B99855 /* functions.swift */,
+				ABCD5D3F27922E9800B99855 /* selectedStore.swift */,
+				ABCD5D5C279719CC00B99855 /* AnimatedCheckmark.swift */,
+				AB0051A4279879F80072AB5F /* siren.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABCD5D192791F4A600B99855 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABCD5D2E2791FB4100B99855 /* Category.swift */,
+				ABCD5D172791F4A100B99855 /* Item.swift */,
+				ABCD5D48279269FD00B99855 /* Cart.swift */,
+				ABD9479A27A200B4008744D2 /* KioskConfig.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ABCD5D362792234B00B99855 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ABCD5D372792236600B99855 /* CategoryListView.swift */,
+				ABCD5D392792237400B99855 /* ItemListView.swift */,
+				ABCD5D3B2792238000B99855 /* VariationListView.swift */,
+				ABCD5D4127924CEC00B99855 /* AddToOrderView.swift */,
+				ABCD5D4A27926E5100B99855 /* OrderNowView.swift */,
+				ABCD5D5027929F2300B99855 /* PayNow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ABCD5D572795FF5100B99855 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				ABCD5D582795FF6B00B99855 /* AdminLogin.swift */,
+				ABCD5D5A2796047900B99855 /* AdminMain.swift */,
+				ABD9479227A1C106008744D2 /* AdminSetPin.swift */,
+				ABD9479427A1C61C008744D2 /* AdminSetDeviceID.swift */,
+				ABD9479627A1FA96008744D2 /* AdminSetKioskName.swift */,
+				ABD9479827A1FC22008744D2 /* AdminSetLocationID.swift */,
+				ABD9479C27A2043F008744D2 /* AdminLoadConfig.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABCD5D012791ED2100B99855 /* squarekiosk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABCD5D102791ED2200B99855 /* Build configuration list for PBXNativeTarget "squarekiosk" */;
+			buildPhases = (
+				ABCD5CFE2791ED2100B99855 /* Sources */,
+				ABCD5CFF2791ED2100B99855 /* Frameworks */,
+				ABCD5D002791ED2100B99855 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = squarekiosk;
+			packageProductDependencies = (
+				ABCD5D1B2791F56600B99855 /* Alamofire */,
+				ABCD5D1E2791F9FD00B99855 /* FirebaseAuth */,
+				ABCD5D202791F9FD00B99855 /* FirebaseDatabase */,
+				ABCD5D222791F9FD00B99855 /* FirebaseFirestore */,
+				ABCD5D242791F9FD00B99855 /* FirebaseRemoteConfig */,
+				ABCD5D262791F9FD00B99855 /* FirebaseStorage */,
+				ABCD5D44279254BF00B99855 /* AlertToast */,
+			);
+			productName = squarekiosk;
+			productReference = ABCD5D022791ED2100B99855 /* squarekiosk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABCD5CFA2791ED2100B99855 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					ABCD5D012791ED2100B99855 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = ABCD5CFD2791ED2100B99855 /* Build configuration list for PBXProject "squarekiosk" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABCD5CF92791ED2100B99855;
+			packageReferences = (
+				ABCD5D1A2791F56600B99855 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				ABCD5D1D2791F9FD00B99855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				ABCD5D43279254BF00B99855 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
+			productRefGroup = ABCD5D032791ED2100B99855 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABCD5D012791ED2100B99855 /* squarekiosk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABCD5D002791ED2100B99855 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCD5D0D2791ED2200B99855 /* Preview Assets.xcassets in Resources */,
+				ABCD5D0A2791ED2200B99855 /* Assets.xcassets in Resources */,
+				ABCD5D332792009200B99855 /* RemoteConfigDefaults.plist in Resources */,
+				AB0051A727987A7F0072AB5F /* alarm.mp3 in Resources */,
+				ABCD5D312791FFCF00B99855 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABCD5CFE2791ED2100B99855 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABCD5D4227924CEC00B99855 /* AddToOrderView.swift in Sources */,
+				ABD9479527A1C61C008744D2 /* AdminSetDeviceID.swift in Sources */,
+				ABD9479727A1FA96008744D2 /* AdminSetKioskName.swift in Sources */,
+				ABCD5D5127929F2400B99855 /* PayNow.swift in Sources */,
+				ABCD5D182791F4A100B99855 /* Item.swift in Sources */,
+				ABCD5D082791ED2100B99855 /* ContentView.swift in Sources */,
+				ABCD5D5B2796047900B99855 /* AdminMain.swift in Sources */,
+				ABCD5D2D2791FAAA00B99855 /* AppDelegates.swift in Sources */,
+				ABCD5D592795FF6B00B99855 /* AdminLogin.swift in Sources */,
+				AB0051A5279879F80072AB5F /* siren.swift in Sources */,
+				ABCD5D4D279274F700B99855 /* orderCard.swift in Sources */,
+				ABCD5D382792236600B99855 /* CategoryListView.swift in Sources */,
+				ABCD5D4B27926E5100B99855 /* OrderNowView.swift in Sources */,
+				ABCD5D4727925BF200B99855 /* CustomStepper.swift in Sources */,
+				ABD9479127A1BD57008744D2 /* UserConfigDefaults.swift in Sources */,
+				ABD9479327A1C106008744D2 /* AdminSetPin.swift in Sources */,
+				ABD9479927A1FC22008744D2 /* AdminSetLocationID.swift in Sources */,
+				ABCD5D352792040B00B99855 /* extensions.swift in Sources */,
+				ABCD5D3A2792237400B99855 /* ItemListView.swift in Sources */,
+				ABD9479D27A2043F008744D2 /* AdminLoadConfig.swift in Sources */,
+				ABCD5D5D279719CC00B99855 /* AnimatedCheckmark.swift in Sources */,
+				ABCD5D3C2792238000B99855 /* VariationListView.swift in Sources */,
+				ABCD5D292791FA2500B99855 /* RemoteConfigManager.swift in Sources */,
+				ABCD5D4F2792781100B99855 /* Counter.swift in Sources */,
+				ABCD5D162791F42500B99855 /* menuStore.swift in Sources */,
+				ABCD5D4027922E9800B99855 /* selectedStore.swift in Sources */,
+				ABCD5D062791ED2100B99855 /* squarekioskApp.swift in Sources */,
+				ABCD5D2F2791FB4100B99855 /* Category.swift in Sources */,
+				ABD9479B27A200B4008744D2 /* KioskConfig.swift in Sources */,
+				ABCD5D3E2792247B00B99855 /* functions.swift in Sources */,
+				ABCD5D49279269FD00B99855 /* Cart.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABCD5D0E2791ED2200B99855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ABCD5D0F2791ED2200B99855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABCD5D112791ED2200B99855 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"squarekiosk/Preview Content\"";
+				DEVELOPMENT_TEAM = JM8BVRXPZB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = squarekiosk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashleybailey.squarekiosk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		ABCD5D122791ED2200B99855 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"squarekiosk/Preview Content\"";
+				DEVELOPMENT_TEAM = JM8BVRXPZB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = squarekiosk/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashleybailey.squarekiosk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABCD5CFD2791ED2100B99855 /* Build configuration list for PBXProject "squarekiosk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABCD5D0E2791ED2200B99855 /* Debug */,
+				ABCD5D0F2791ED2200B99855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABCD5D102791ED2200B99855 /* Build configuration list for PBXNativeTarget "squarekiosk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABCD5D112791ED2200B99855 /* Debug */,
+				ABCD5D122791ED2200B99855 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ABCD5D1A2791F56600B99855 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		ABCD5D1D2791F9FD00B99855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		ABCD5D43279254BF00B99855 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ABCD5D1B2791F56600B99855 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABCD5D1A2791F56600B99855 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		ABCD5D1E2791F9FD00B99855 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABCD5D1D2791F9FD00B99855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		ABCD5D202791F9FD00B99855 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABCD5D1D2791F9FD00B99855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		ABCD5D222791F9FD00B99855 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABCD5D1D2791F9FD00B99855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		ABCD5D242791F9FD00B99855 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABCD5D1D2791F9FD00B99855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		ABCD5D262791F9FD00B99855 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABCD5D1D2791F9FD00B99855 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		ABCD5D44279254BF00B99855 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ABCD5D43279254BF00B99855 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = ABCD5CFA2791ED2100B99855 /* Project object */;
+}

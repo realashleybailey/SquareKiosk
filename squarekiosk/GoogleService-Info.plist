@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>647467436170-2n515pg44tdmtdo4k6ca14q26tc25a83.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.647467436170-2n515pg44tdmtdo4k6ca14q26tc25a83</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBIiAAAhLgIfKywiN8VH5dwz_wiQC8OxSk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>647467436170</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ashleybailey.ashleysparty</string>
+	<key>PROJECT_ID</key>
+	<string>ashleys-party</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ashleys-party.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:647467436170:ios:6643bd231de379f3994573</string>
+	<key>DATABASE_URL</key>
+	<string>https://ashleys-party-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

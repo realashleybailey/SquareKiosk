@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>kiosk_config</key>
+	<string>[{&quot;api_url&quot;:&quot;https://ashleys-party-api.herokuapp.com&quot;,&quot;kiosk_name&quot;:&quot;Kiosk 1&quot;,&quot;location_id&quot;:&quot;FZJBMN73R20CS&quot;,&quot;device_id&quot;:&quot;044CS145A1001016&quot;,&quot;enviroment&quot;:&quot;production&quot;,&quot;merchant_identifier&quot;:&quot;merchant.ios.ashleybailey.ashleysparty.live&quot;}]</string>
+	<key>squareAppID</key>
+	<string>sq0idp-4hrPbf6XjHGCrmDaAFKhRA</string>
+	<key>squareAppID_SANDBOX</key>
+	<string>sandbox-sq0idb-PVI5UXr41f85Rjpps21aqw</string>
+	<key>ios_ENVIROMENT</key>
+	<string>production</string>
+	<key>squareLocationID</key>
+	<string>FZJBMN73R20CS</string>
+	<key>squareLocationID_SANDBOX</key>
+	<string>L2J0QNNV0KM7G</string>
+	<key>APIurl</key>
+	<string>https://ashleys-party-api.herokuapp.com</string>
+</dict>
+</plist>
